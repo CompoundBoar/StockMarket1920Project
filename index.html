@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1920s Stock Game</title>
+    <!-- Load external CSS styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>1920s Stock Game</h1>
+    <div class="description">
+        <h2>Welcome to the 1920s!</h2>
+       <p> In this game, you are a farmer living in 1920. 
+        You had a good harvest last year, and between that and your savings you have $500 to invest in the stock market. </p>
+        
+      <p> Choose which stocks to buy and sell each year, and see if you can predict which companies are on their way up and who is about to crash. You can track your net worth with a line graph, and at the end print a report showing how you did. 
+    </p> 
+      <p>  Enter your name below to get started. </p>
+      <p class="disclaimer">Disclaimer: The prices and some events in this simulation are fictionalized to represent the general movement of the stock market during the 1920s.</p>
+    </div>
+    <div class="user-input">
+      Enter your name below to get started:<p></p>
+      <form>
+      <input type="text" maxlength="20" minlength="1" id="userName">
+      <input type="button" value="Click to Continue" id="nameButton">
+    </form>
+    </div>
+    <div id="1920-stock-picks">
+      <p id="Hello"></p>
+      <p style = "display:none" id="stocks1920">
+        Review the stock price table below and make your first picks. Remember, you have $500 to spend. </p>
+        <table style = "display:none" id="table1920"> 
+          <tr> 
+              <th>Company</th>
+              <th>Price/Share</th>
+              <th>Shares</th>
+              </tr>
+              <tr>
+                  <td>Kroger</td>
+                  <td>$100</td>
+                  <td><input type = "text" id = "kroger1920" size= 2 value="0"></td>
+              <tr>
+               <td> Radio Corporation </td>
+              <td> $70 </td>
+              <td><input type = "text" id = "radio1920" size= 2 value="0"></td>
+              </tr>
+              <tr>
+                  <td> Mammoth Oil </td>
+                  <td> $120 </td>
+                  <td> <input type = "text" id = "mammoth1920" size= 2 value="0"></td>
+                  </tr>
+              <tr>
+                  <td> Durant Motors </td>
+                  <td> $50 </td>
+                  <td><input type = "text" id = "durant1920" size= 2 value="0"></td>
+                  </tr>
+              <tr>
+                  <td> Midland Power</td>
+                  <td> $80 </td>
+                  <td><input type = "text" id = "midland1920" size= 2 value="0"></td>
+                  </tr>
+              <tr>
+                  <td> Union Pacific </td>
+                  <td> $90 </td>
+                  <td><input type = "text" id = "union1920" size= 2 value="0"></td>
+                  </tr>
+              <tr>
+                  <td> Tel-Tone </td>
+                  <td> $100 </td>
+                  <td><input type = "text" id = "teltone1920" size= 2 value="0"></td>
+              </table> <br> 
+      <button style = "display:none" id ="buy1920"> Buy Stocks </button>
+    </div>
+
+    <div id="total1920"></div>
+    <div id = "cashRemaining1920"></div>
+    <button style="display:none" id = "continue1920">Continue to 1922</button><p></p>
+    <div class="description" style="display:none" id="buyingMargin">
+    <h3>Buying on Margin</h3>
+    <p>If you got a negative number for your amount left to spend, you've just bought stocks on margin! Buying on margin means you're borrowing money in order to buy stocks. If the stock price goes up, you can sell your stock and pay back your loan. But if the stock goes down, you might lose your <b>collateral</b>. Collateral is something you own - like a house or a car - that backs up your loan. If you can't repay your loan, the bank may take your collateral. For the purposes of this exercise, you are borrowing money against your farm. If you end the game in the negative, the bank will take your farm to pay off your loan!</p>
+  </div>
+  <div id="stocks 1922" style="display:none"></div>
+
+   
+    
+</body>
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="script.js"></script>
