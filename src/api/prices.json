@@ -1,0 +1,29 @@
+[{
+    "id": "Kroger",
+    "company": "Kroger",
+    "price1920": 100,
+    "price1922": 120
+},
+{
+    "id": "radioCorporation",
+    "company": "Radio Corporation",
+    "price1920": 70,
+    "price1922": 85
+},
+{
+   "id": "mammothOil",
+    "company": "Mammoth Oil",
+    "price1920": 120,
+    "price1922": 140
+},
+{
+    "id": "durantMotors",
+    "company": "Durant Motors",
+    "price1920": 50,
+    "price1922": 90
+},
+{
+
+}
+
+]
