@@ -1,17 +1,18 @@
 import StockMarket from "./StockMarket";
-import React, {useState} from "react";
+import React, { useState } from "react";
 
 export function ContinueButton({ marketYear }: { marketYear: number }) {
-    const [marketYear, setMarketYear] = useState('');
-    function goToMarket() {
-setMarketYear(marketYear);
+    const [showStockMarket, setShowStockMarket] = useState(false);
 
+    function goToMarket() {
+        setShowStockMarket(true);
     }
+
+
     return (
         <div className="continue-button">
-            <button
-            onClick={goToMarket}>Continue to {marketYear}</button>
-            </div>
-        
+            <button onClick={goToMarket}>Continue to {marketYear}</button>
+            {showStockMarket && <StockMarket marketYear={marketYear} />}
+        </div>
     );
 }
