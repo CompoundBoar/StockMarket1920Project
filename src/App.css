@@ -5,16 +5,30 @@ body {
 .App {
   font-family: 'Courier New', Courier, monospace ;
   text-align: left;
-
-}
-.header {text-align: center;}
-
-.paragraph {
   margin: auto;
   max-width: 600px;
   padding: 10px;
+}
+
+.greeting {
+  font-weight: bold;
+}
+
+.continue-button {
+  margin-top: 10px;
+}
+
+.header {text-align: center;}
+
+.paragraph {
+ margin-bottom: 10px;
 
 }
+
+.submit-button {
+margin: 10px;}
+
+
 
 .App-logo {
   height: 40vmin;

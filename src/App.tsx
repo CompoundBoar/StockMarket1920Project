@@ -1,6 +1,8 @@
-import React from 'react';
-import logo from './logo.svg';
+
 import './App.css';
+import { EnterName } from './EnterName';
+
+
 
 function App() {
   return (
@@ -20,8 +22,7 @@ function App() {
       <div className='paragraph'> Enter your name below to get started. </div>
        <div className='paragraph'><i> Disclaimer: The prices and some events in this simulation are fictionalized 
         to represent the general movement of the stock market during the 1920s.</i></div>
-
-       
+<EnterName />
     </div>
   );
 }
