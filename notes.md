@@ -12,3 +12,7 @@ To-Do:
 - API file with news events
 -- properties: headline, content, date, id (yearKeyword)
 -- component that returns a news bulletin with formatting
+
+-- create array of years for marketYear and increment by 1 each instance of ContinueButton?
+--- figure out how to ensure new content is added
+-- graph!

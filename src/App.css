@@ -64,3 +64,14 @@ margin: 10px;}
     transform: rotate(360deg);
   }
 }
+table {
+  text-align: center;
+  border-collapse: collapse;
+  width: 100%;
+}
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 8px;
+}
